@@ -1,0 +1,123 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  margin: 0;
+  position: relative;
+  background: linear-gradient(to bottom right, orange, red);
+  animation: gradientOscillation 10s infinite alternate;
+  background-size: 200% 200%;
+}
+
+@keyframes gradientOscillation {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+.container {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+button {
+  margin: 30px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  text-shadow: 3px 3px #fff,
+               -1px -1px 0 #fff,
+                1px -1px 0 #fff,
+               -1px  1px 0 #fff,
+                1px  1px 0 #fff;
+  font-size: 2rem;
+  color: #FF0000;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.dice-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  margin: auto 0;
+}
+
+.dice {
+  position: relative;
+  width: 250px;
+  margin: 0 25px;
+  text-align: center;
+  min-height: 450px;
+}
+
+.dice p {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #FF0000;
+  font-family: 'Poppins', sans-serif;
+  text-shadow: -1px -1px 0 #fff,
+                1px -1px 0 #fff,
+               -1px  1px 0 #fff,
+                1px  1px 0 #fff,
+                2px 2px #fff;
+  position: absolute;
+  width: 100%;
+  top: 20px;
+  left: 0;
+  margin: 0;
+  z-index: 2;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.dice img {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  display: none;
+  max-width: 100%;
+  height: auto;
+  top: 150px;
+}
+
+.dice img[style*="display: block"] {
+  display: block !important;
+}
+
+footer {
+  width: 100%;
+  color: #EEEEEE;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
+  position: fixed;
+  bottom: 0;
+  padding: 20px 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+footer div {
+  margin: 5px 0;
+}
