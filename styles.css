@@ -25,11 +25,14 @@ body {
   text-align: center;
   display: flex;
   flex-direction: column;
+  align-items: center;
   min-height: 100vh;
+  justify-content: center;
+  position: relative;
 }
 
 button {
-  margin: 30px;
+  margin-bottom: 50px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   text-shadow: 3px 3px #fff,
@@ -58,8 +61,7 @@ button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex: 1;
-  margin: auto 0;
+  width: 100%;
 }
 
 .dice {
